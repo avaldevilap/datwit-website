@@ -5,7 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Datwit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
+
   <body>
     <header class="primary-header">
       <div class="container">
@@ -13,8 +21,14 @@
           <img src="/logo.svg" class="logo" alt="Datwit logo" />
         </a>
 
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+          <img class="icon-menu" src="/menu.svg" alt="menu">
+          <img class="icon-close" src="/close.svg" alt="close">
+          <span class="visually-hidden">Menu</span>
+        </button>
+
         <nav class="primary-navigation">
-          <ul>
+          <ul aria-label="Primary" role="list" class="nav-list" id="primary-navigation">
             <li><a href="#">Our work</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">About us</a></li>
@@ -25,9 +39,133 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <section class="padding-block-900">
+        <div class="container">
+          <h1 class="fs-primary-heading fw-bold">
+            Bring your idea, we will make it real!
+          </h1>
+          <p class="fs-body fw-semi-bold">
+            The sky is not the limit...it's just the start
+          </p>
+          <a href="#" class="button"> Get in touch </a>
+        </div>
+      </section>
 
-    <footer></footer>
+      <section class="padding-block-900">
+        <div class="container">
+          <h2 class="fs-secondary-heading fw-bold">
+            Machine Learning solutions from A to Z
+          </h2>
+          <div class="even-columns">
+            <div>
+              <img src="/data-engineering.svg" alt="Data Engineering" />
+            </div>
+            <div>
+              <p>Let us get the best out of your data with:</p>
+              <ul role="list">
+                <li>Exploratory Data Analysis</li>
+                <li>Data cleaning</li>
+                <li>Data Anonymization</li>
+                <li>Custom ETL Design</li>
+                <li>Data Infrastructure Design</li>
+                <li>Data visualization</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="even-columns">
+            <div>
+              <img src="/smart-services.svg" alt="Smart services" />
+            </div>
+            <div>
+              <p>Build smart apps from the start with:</p>
+              <ul role="list">
+                <li>ML Models Design</li>
+                <li>Model training, and optimization</li>
+                <li>Design and deploy data pipelines</li>
+                <li>Built-in observability and monitoring</li>
+                <li>Model Interpretability Reports</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="fs-secondary-heading fw-bold">Wait...there's more...</h2>
+          <div class="even-columns">
+            <div>
+              <img src="/ml-full-scope.svg" alt="Machine Learning full scope" />
+            </div>
+            <div>
+              <p>We can also offer you an end-to-end solution with:</p>
+              <ul role="list">
+                <li>Increase your Data Management in self system</li>
+                <li>Improved your Data & Integrate through APIs</li>
+                <li>ML infrastructure design for AWS cloud</li>
+                <li>Web interfaces for man-in-the-loop AI systems</li>
+                <li>Machine learning-related consulting services</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="padding-block-900">
+        <h2 class="fs-secondary-heading fw-bold">Join us!</h2>
+        <p>Discover who you really want to be as part of our Datwit family.</p>
+        <div class="even-columns">
+          <div>
+            <img src="/partner.svg" alt="Partner" />
+          </div>
+          <div>
+            <img src="/team.svg" alt="Team" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="padding-block-900 bg-primary-400 text-neutral-100">
+      <h2 class="fs-secondary-heading fw-bold">Let's work together</h2>
+
+      <div class="even-columns">
+        <div>
+          <h3>Follow us</h3>
+          <ul role="list">
+            <li><a aria-label="linkedin" href="#"></a></li>
+            <li><a aria-label="github" href="#"></a></li>
+            <li><a aria-label="twitter" href="#"></a></li>
+          </ul>
+        </div>
+        <div>
+          <nav class="footer-nav">
+            <ul aria-label="Footer" role="list">
+              <li><a href="#">Our work</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <h3>Specialized content</h3>
+          <ul role="list">
+            <li><a href="#">Partner area</a></li>
+            <li><a href="#">Team member area</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+
+          <h3>Data protection</h3>
+          <ul role="list">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <p>&copy; 2022 Datwit. All Rights Reserved</p>
+      </div>
+    </footer>
 
     <script type="module" src="/src/main.ts"></script>
   </body>
