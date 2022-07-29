@@ -17,70 +17,94 @@
   <body>
     <header class="primary-header">
       <div class="container">
-        <a href="/">
-          <img src="/logo.svg" class="logo" alt="Datwit logo" />
-        </a>
+        <div class="nav-wrapper">
+          <a href="/">
+            <img src="/logo.svg" class="logo" alt="Datwit logo" />
+          </a>
 
-        <button class="mobile-nav-toggle" aria-controls="primary-navigation">
-          <img class="icon-menu" src="/menu.svg" alt="menu">
-          <img class="icon-close" src="/close.svg" alt="close">
-          <span class="visually-hidden">Menu</span>
-        </button>
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <img
+              class="icon-menu"
+              src="/menu.svg"
+              alt="menu"
+              width="24"
+              height="24"
+              aria-hidden="true"
+            />
+            <img
+              class="icon-close"
+              src="/close.svg"
+              alt="close"
+              width="24"
+              height="24"
+              aria-hidden="true"
+            />
+            <span class="visually-hidden">Menu</span>
+          </button>
 
-        <nav class="primary-navigation">
-          <ul aria-label="Primary" role="list" class="nav-list" id="primary-navigation">
-            <li><a href="#">Our work</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </nav>
+          <nav class="primary-navigation" id="primary-navigation">
+            <ul aria-label="Primary" role="list" class="nav-list">
+              <li><a href="#">Our work</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="padding-block-900">
-        <div class="container">
-          <h1 class="fs-primary-heading fw-bold">
+      <section class="padding-block-hero text-center">
+        <div class="container flow">
+          <h1 class="fs-primary-heading fw-bold margin-inline-auto">
             Bring your idea, we will make it real!
           </h1>
-          <p class="fs-body fw-semi-bold">
-            The sky is not the limit...it's just the start
-          </p>
+          <p>The sky is not the limit...it's just the start</p>
           <a href="#" class="button"> Get in touch </a>
         </div>
       </section>
 
       <section class="padding-block-900">
-        <div class="container">
-          <h2 class="fs-secondary-heading fw-bold">
-            Machine Learning solutions from A to Z
-          </h2>
-          <div class="even-columns">
-            <div>
-              <img src="/data-engineering.svg" alt="Data Engineering" />
-            </div>
-            <div>
-              <p>Let us get the best out of your data with:</p>
-              <ul role="list">
-                <li>Exploratory Data Analysis</li>
-                <li>Data cleaning</li>
-                <li>Data Anonymization</li>
-                <li>Custom ETL Design</li>
-                <li>Data Infrastructure Design</li>
-                <li>Data visualization</li>
-              </ul>
+        <div class="container flow" style="display: grid; gap: 5em">
+          <div class="flow" style="--flow-spacer: 5em">
+            <h2
+              class="fs-secondary-heading fw-bold text-center margin-inline-auto"
+              style="max-width: 15ch"
+            >
+              Machine Learning solutions from A to Z
+            </h2>
+            <div class="even-columns">
+              <div>
+                <img src="/data-engineering.svg" alt="Data Engineering" />
+              </div>
+              <div class="flow justify-self-center">
+                <p>Let us get the best out of your data with:</p>
+                <ul
+                  class="flow arrow-right-bullet"
+                  style="--flow-spacer: 1em"
+                  role="list"
+                >
+                  <li>Exploratory Data Analysis</li>
+                  <li>Data cleaning</li>
+                  <li>Data Anonymization</li>
+                  <li>Custom ETL Design</li>
+                  <li>Data Infrastructure Design</li>
+                  <li>Data visualization</li>
+                </ul>
+              </div>
             </div>
           </div>
 
           <div class="even-columns">
-            <div>
-              <img src="/smart-services.svg" alt="Smart services" />
-            </div>
-            <div>
+            <div class="flow justify-self-center">
               <p>Build smart apps from the start with:</p>
-              <ul role="list">
+              <ul class="flow arrow-right-bullet" role="list">
                 <li>ML Models Design</li>
                 <li>Model training, and optimization</li>
                 <li>Design and deploy data pipelines</li>
@@ -88,31 +112,47 @@
                 <li>Model Interpretability Reports</li>
               </ul>
             </div>
+            <div>
+              <img src="/smart-services.svg" alt="Smart services" />
+            </div>
           </div>
 
-          <h2 class="fs-secondary-heading fw-bold">Wait...there's more...</h2>
-          <div class="even-columns">
-            <div>
-              <img src="/ml-full-scope.svg" alt="Machine Learning full scope" />
-            </div>
-            <div>
-              <p>We can also offer you an end-to-end solution with:</p>
-              <ul role="list">
-                <li>Increase your Data Management in self system</li>
-                <li>Improved your Data & Integrate through APIs</li>
-                <li>ML infrastructure design for AWS cloud</li>
-                <li>Web interfaces for man-in-the-loop AI systems</li>
-                <li>Machine learning-related consulting services</li>
-              </ul>
+          <div class="flow" style="--flow-spacer: 5em">
+            <h2 class="fs-secondary-heading fw-bold text-center">
+              Wait...there's more...
+            </h2>
+            <div class="even-columns">
+              <div>
+                <img
+                  src="/ml-full-scope.svg"
+                  alt="Machine Learning full scope"
+                />
+              </div>
+              <div class="flow justify-self-center">
+                <p>We can also offer you an end-to-end solution with:</p>
+                <ul
+                  class="flow arrow-right-bullet"
+                  style="--flow-spacer: 1em"
+                  role="list"
+                >
+                  <li>Increase your Data Management in self system</li>
+                  <li>Improved your Data & Integrate through APIs</li>
+                  <li>ML infrastructure design for AWS cloud</li>
+                  <li>Web interfaces for man-in-the-loop AI systems</li>
+                  <li>Machine learning-related consulting services</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="padding-block-900">
-        <h2 class="fs-secondary-heading fw-bold">Join us!</h2>
-        <p>Discover who you really want to be as part of our Datwit family.</p>
-        <div class="even-columns">
+      <section class="padding-block-900 flow">
+        <h2 class="fs-secondary-heading fw-bold text-center">Join us!</h2>
+        <p class="text-center">
+          Discover who you really want to be as part of our Datwit family.
+        </p>
+        <div class="even-columns even-columns--center">
           <div>
             <img src="/partner.svg" alt="Partner" />
           </div>
