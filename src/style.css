@@ -381,7 +381,7 @@ section ul > li {
   padding-block: var(--size-900);
 }
 .padding-block-hero {
-  padding-block: 20rem;
+  padding-block: clamp(10rem, 15vw, 20rem);
 }
 
 .margin-inline-auto {
