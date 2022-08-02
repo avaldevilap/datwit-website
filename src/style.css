@@ -138,6 +138,10 @@ p:not([class]),
 section ul > li {
   opacity: 0.7;
 }
+p > a {
+  text-decoration: none;
+  color: var(--clr-accent-400);
+}
 
 .arrow-right-bullet li {
   display: flex;
@@ -152,6 +156,19 @@ section ul > li {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: 1rem;
+}
+
+.team-members-item {
+  margin-inline: auto;
+}
+.team-members-item img {
+  border-radius: 100vmax;
 }
 
 /* Button */
@@ -253,6 +270,7 @@ footer * a {
     position: fixed;
     padding: var(--size-700);
     inset: 7rem var(--size-400) auto;
+    z-index: 100;
     max-width: 30rem;
     margin-inline: auto;
     background-color: var(--clr-neutral-100);
@@ -442,4 +460,19 @@ footer * a {
 }
 .max-width-500 {
   max-width: 28rem;
+}
+.max-w-500 {
+  max-inline-size: 50ch;
+}
+.max-w-600 {
+  max-inline-size: 60ch;
+}
+.max-w-700 {
+  max-inline-size: 70ch;
+}
+.max-w-800 {
+  max-inline-size: 80ch;
+}
+.max-w-900 {
+  max-inline-size: 90ch;
 }
