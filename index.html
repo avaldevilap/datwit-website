@@ -33,22 +33,20 @@
             aria-controls="primary-navigation"
             aria-expanded="false"
           >
-            <img
-              class="icon-menu"
-              src="/menu.svg"
-              alt="menu"
-              width="24"
-              height="24"
+            <span
+              class="iconify icon-menu"
+              data-icon="heroicons-outline:menu"
+              data-width="24"
+              data-height="24"
               aria-hidden="true"
-            />
-            <img
-              class="icon-close"
-              src="/close.svg"
-              alt="close"
-              width="24"
-              height="24"
+            ></span>
+            <span
+              class="iconify icon-close"
+              data-icon="heroicons-outline:x"
+              data-width="24"
+              data-height="24"
               aria-hidden="true"
-            />
+            ></span>
             <span class="visually-hidden">Menu</span>
           </button>
 
@@ -72,7 +70,7 @@
             Bring your idea, we will make it real!
           </h1>
           <p>The sky is not the limit...it's just the start</p>
-          <a href="#" class="button"> Get in touch </a>
+          <a href="#contact" class="button">Get in touch</a>
         </div>
       </section>
 
@@ -198,14 +196,14 @@
           <p class="text-center">
             Discover who you really want to be as part of our Datwit family.
           </p>
-          <div class="even-columns even-columns--center">
+          <!-- <div class="even-columns even-columns--center hide-md-n-below">
             <div>
               <img src="/partner.svg" alt="Partner" />
             </div>
             <div>
               <img src="/team.svg" alt="Team" />
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
     </main>
@@ -240,17 +238,29 @@
             <h3 class="text-uppercase">Follow us</h3>
             <ul class="social-icons fs-secondary-heading" role="list">
               <li>
-                <a aria-label="linkedin" href="#">
+                <a
+                  aria-label="linkedin"
+                  href="https://www.linkedin.com/company/datwit/"
+                  target="_blank"
+                >
                   <span class="iconify" data-icon="bxl:linkedin-square"></span>
                 </a>
               </li>
               <li>
-                <a aria-label="github" href="#">
+                <a
+                  aria-label="github"
+                  href="https://github.com/datwit"
+                  target="_blank"
+                >
                   <span class="iconify" data-icon="bxl:github"></span>
                 </a>
               </li>
               <li>
-                <a aria-label="twitter" href="#">
+                <a
+                  aria-label="twitter"
+                  href="https://twitter.com/datwitofficial"
+                  target="_blank"
+                >
                   <span class="iconify" data-icon="bxl:twitter"></span>
                 </a>
               </li>
@@ -262,7 +272,7 @@
                 <li><a href="#">Our work</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">About us</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="#contact">Contact us</a></li>
                 <li><a href="#">Blog</a></li>
               </ul>
             </nav>
