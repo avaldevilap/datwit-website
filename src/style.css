@@ -241,6 +241,11 @@ footer * a {
   color: var(--clr-neutral-100);
 }
 
+.social-icons {
+  display: flex;
+  gap: var(--size-600);
+}
+
 @media (max-width: 48em) {
   .primary-navigation {
     display: none;
