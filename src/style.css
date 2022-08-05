@@ -142,20 +142,26 @@ p > a {
   text-decoration: none;
   color: var(--clr-accent-400);
 }
+small {
+  font-size: 0.8em;
+}
 
 .arrow-right-bullet li {
   display: flex;
 }
 
 .arrow-right-bullet li:before {
-  content: '';
+  content: url('https://api.iconify.design/heroicons-outline/arrow-circle-right.svg?color=%23E79B23&height=24&width=24');
   margin-right: 0.5em;
-  width: 24px;
-  height: 24px;
-  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" style="color: hsl(37 80% 52%)" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" /> </svg>');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
+}
+
+.badge-check-bullet li {
+  display: flex;
+}
+
+.badge-check-bullet li:before {
+  content: url('https://api.iconify.design/heroicons-outline/badge-check.svg?color=green&height=24&width=24');
+  margin-right: 0.5em;
 }
 
 .team-members {
@@ -169,6 +175,18 @@ p > a {
 }
 .team-members-item img {
   border-radius: 100vmax;
+}
+
+.pricing-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(190px, 100%), 1fr));
+  gap: 1rem;
+}
+
+.pricing-column {
+  padding: 1rem;
+  outline: 1px solid var(--clr-neutral-900);
+  border-radius: 0.5rem;
 }
 
 /* Button */
@@ -362,8 +380,14 @@ footer * a {
   }
 }
 
+.text-left {
+  text-align: left;
+}
 .text-center {
   text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 
 .text-uppercase {
@@ -426,6 +450,25 @@ footer * a {
 }
 .fs-body {
   font-size: var(--fs-body);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+.fs-500 {
+  font-size: var(--fs-500);
+}
+.fs-600 {
+  font-size: var(--fs-600);
+}
+.fs-700 {
+  font-size: var(--fs-700);
+}
+.fs-800 {
+  font-size: var(--fs-800);
+}
+.fs-900 {
+  font-size: var(--fs-900);
 }
 
 .padding-block-500 {
